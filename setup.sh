@@ -29,7 +29,8 @@ apt-mark unhold grub-common
 
 echo "Installing miscellaneous packages packages..."
 apt-get install -y build-essential curl git nodejs imagemagick subversion python-software-properties \
-        zip unzip libz-dev libreadline-dev zlib1g zlib1g-dev sqlite3 libsqlite3-dev openssl libssl-dev
+        zip unzip libz-dev libreadline-dev zlib1g zlib1g-dev sqlite3 libsqlite3-dev openssl libssl-dev \
+        libffi-dev linux-tools-generic systemtap sbcl gdb
 
 echo 'Installing PostgreSQL...'
 apt-get install -y postgresql postgresql-contrib postgresql-client libpq-dev
